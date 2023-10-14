@@ -1,0 +1,60 @@
+/* Basic styling for the banners */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #3498db, #27ae60);
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+.hd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner {
+    margin: 10px;
+    padding: 20px 0;
+    border: 2px solid #000;
+    border-radius: 16px;
+    text-align: center;
+}
+
+
+.button-container {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the repository button */
+.repository-button {
+    background-color: #304858;
+}
+
+/* Style for the deployment button */
+.deployment-button {
+    background-color: #291951;
+}
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #3498db, #27ae60);
+    }
+
+    100% {
+        background: linear-gradient(135deg, #27ae60, #3498db);
+    }
+}
